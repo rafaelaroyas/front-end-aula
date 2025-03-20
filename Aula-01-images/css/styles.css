@@ -76,7 +76,7 @@ main {
     padding: 30px;
     box-shadow: 1px 1px 20px #ccc;
     gap: 10px;
-    display: flex;
+    display: flex; /* faz o conteudo não ficar em cima do outro */
     flex-wrap: wrap;
     justify-content: space-evenly;
     transition: .7s;
@@ -93,4 +93,18 @@ main {
 
 .card-item p {
     width: 80%;
+}
+
+/* mini responsivo */
+@media(width < 960px){
+    .card-item {
+        width: 80%;
+    }
+}
+
+/* mini responsivo */
+@media(width < 500px){
+    .card-item {
+        width: 90%;
+    }
 }
